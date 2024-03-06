@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags for character set and viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Page title -->
+    <title>Document</title>
+    
+    <!-- External CSS and Font Awesome stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header section with navigation, search bar, and logo -->
+    <header role="banner">
+        <a href="home.html" class="logo"><span>M</span>WA</a>
+        
+        <!-- Navigation links -->
+        <nav role="navigation" class="navbar">
+            <a href="index.html">Home</a>
+            <a href="book.html">Book</a>
+            <a href="packages.html">Packages</a>
+            <a href="review.html">Review</a>
+        </nav>
+        
+        <!-- Icons for search and user login -->
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn" aria-label="Search"></i>
+            <i class="fas fa-user" id="login-btn" aria-label="User Login"></i>
+        </div>
+        
+        <!-- Search bar -->
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="Search here..." aria-label="Search">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+    </header>
+
+    <!-- Login form container for login functionality -->
+    <div class="login-form-container">
+        <i class="fas fa-times" id="form-close"></i>
+        <form action="">
+            <h3 id="loginFormTitle">Login</h3>
+            <input type="email" class="box" placeholder="Enter your email" aria-label="Email">
+            <input type="password" class="box" placeholder="Enter your password" aria-label="Password">
+            <button type="submit" class="btn">Login Now</button>
+            <input type="checkbox" id="remember">
+            <label for="remember">Remember me</label>
+            <p>Forgot password? <a href="#" aria-label="Forgot Password">Click here</a></p>
+            <p>Don't have an account? <a href="#" id="SignUp" aria-label="Register Now">Register now</a></p>
+        </form>
+    </div>
+
+    <!-- Signup form container for signup functionality -->
+    <div class="login-form-container1" role="dialog">
+        <i class="fas fa-times" id="form-close"></i>
+        <form action="">
+            <h3 id="signupFormTitle">Signup</h3>
+            <input type="email" class="box" placeholder="Enter your email" aria-label="Email">
+            <input type="password" class="box" placeholder="Enter your password" aria-label="Password">
+            <input type="password" class="box" placeholder="Enter your password again" aria-label="Confirm Password">
+            <button type="submit" class="btn">SignUp</button>
+            <input type="checkbox" id="remember">
+            <label for="remember">Remember me</label>
+        </form>
+    </div>
+
+    <!-- Home section with content and image controls -->
+    <section class="home" id="home" role="region" aria-label="Home Section">
+        <div class="content">
+            <h3>Start your adventure</h3>
+            <p>Discover new places with us, adventure awaits</p>
+            <a href="#" class="btn" aria-label="Discover">Discover</a>
+        </div>
+
+        <div class="controls">
+            <!-- Image controls -->
+            <span class="img-btn active" data-src="Images/Sl.jpg" aria-label="Image Control"></span>
+            <span class="img-btn" data-src="Images/Sl0.jpg" aria-label="Image Control"></span>
+            <span class="img-btn" data-src="Images/Sl1.jpg" aria-label="Image Control"></span>
+            <span class="img-btn" data-src="Images/Sl2.jpg" aria-label="Image Control"></span>
+            <span class="img-btn" data-src="Images/Sl3.jpg" aria-label="Image Control"></span>
+        </div>
+    </section>
+
+    <!-- Footer section with social links and copyright -->
+    <footer>
+        <h3 style="text-align: center;"><span>M</span>iddle <span>W</span>est <span>A</span>irlines</h3>
+        <div class="social-links">
+            <a href="https://www.facebook.com/rawad.tarhini.31/?locale=en_GB" target="_blank"><i class="fab fa-facebook-f"
+                    aria-label="Facebook"></i></a>
+            <a href="https://x.com/Rawadz5?t=UE5vZTSJ4hCRJu94bQeSXw&s=08" target="_blank"><i class="fab fa-twitter"
+                    aria-label="Twitter"></i></a>
+            <a href="https://www.instagram.com/rawadtarhinii?igsh=MWpoMTZ3YzNydWFqMQ==" target="_blank"><i class="fab fa-instagram"
+                    aria-label="Instagram"></i></a>
+            <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjp-MPBiMSEAxUc3QIHHVcHCKQQFnoECBYQAQ&url=https%3A%2F%2Flb.linkedin.com%2Fin%2Frawad-tarhini-b51652280&usg=AOvVaw3vwFA6HrnR8EHz0VDw9HE5&opi=89978449" target="_blank"><i
+                    class="fab fa-linkedin-in" aria-label="LinkedIn"></i></a>
+        </div>
+        <p class="Copyright" style="text-align: center;">&copy; Copyright 2024 <span>M</span>WA Company. All rights
+            reserved.</p>
+    </footer>
+
+    <!-- External JavaScript for home section -->
+    <script src="js/home.js"></script>
+</body>
+
+</html>

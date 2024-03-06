@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags for character set and viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page title -->
+    <title>Book</title>
+
+    <!-- External CSS and Font Awesome stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header section with navigation, search bar, and logo -->
+    <header style="position: sticky;">
+        <a href="home.html" class="logo"><span>M</span>WA</a>
+
+        <!-- Navigation links -->
+        <nav class="navbar" role="navigation">
+            <a href="index.html">Home</a>
+            <a href="book.html">Book</a>
+            <a href="packages.html">Packages</a>
+            <a href="review.html">Review</a>
+        </nav>
+
+        <!-- Icons for search and user login -->
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn" aria-hidden="true"></i>
+            <i class="fas fa-user" id="login-btn" aria-hidden="true"></i>
+        </div>
+
+        <!-- Search bar -->
+        <form action="" class="search-bar-container">
+            <label for="search-bar" class="fas fa-search" aria-hidden="true"></label>
+            <input type="search" id="search-bar" placeholder="Search here..." aria-label="Search">
+        </form>
+    </header>
+
+    <!-- Login form container for login functionality -->
+    <div class="login-form-container" role="dialog" aria-labelledby="loginFormTitle">
+        <i class="fas fa-times" id="form-close" aria-hidden="true"></i>
+        <form action="" aria-labelledby="loginFormTitle">
+            <h3 id="loginFormTitle">Login</h3>
+            <label for="email">Email:</label>
+            <input type="email" id="email" class="box" placeholder="Enter your email" aria-required="true">
+            <label for="password">Password:</label>
+            <input type="password" id="password" class="box" placeholder="Enter your password" aria-required="true">
+            <button type="submit" class="btn">Login now</button>
+            <input type="checkbox" id="remember">
+            <label for="remember">Remember me</label>
+            <p>Forgot password? <a href="#">Click here</a></p>
+            <p>Don't have an account? <a href="#" id="SignUp">Register now</a></p>
+        </form>
+    </div>
+
+    <!-- Signup form container for signup functionality -->
+    <div class="login-form-container1" role="dialog" aria-labelledby="signupFormTitle">
+        <i class="fas fa-times" id="form-close" aria-hidden="true"></i>
+        <form action="" aria-labelledby="signupFormTitle">
+            <h3 id="signupFormTitle">Signup</h3>
+            <label for="signup-email">Email:</label>
+            <input type="email" id="signup-email" class="box" placeholder="Enter your email" aria-required="true">
+            <label for="signup-password">Password:</label>
+            <input type="password" id="signup-password" class="box" placeholder="Enter your password" aria-required="true">
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" class="box" placeholder="Enter your password again"
+                aria-required="true">
+            <button type="submit" class="btn">SignUp</button>
+            <input type="checkbox" id="remember">
+            <label for="remember">Remember me</label>
+        </form>
+    </div>
+
+    <!-- Book section with a form for flight booking -->
+    <section class="book" id="book">
+        <h1 class="heading" aria-label="Book Now">
+            <span>b</span>
+            <span>o</span>
+            <span>o</span>
+            <span>k</span>
+            <span class="space"></span>
+            <span>n</span>
+            <span>o</span>
+            <span>w</span>
+        </h1>
+
+        <div class="row">
+            <!-- Image for the book section -->
+            <div class="image">
+                <img src="Images/Travel.jpg" alt="Book your flight">
+            </div>
+
+            <!-- Form for inputting flight details -->
+            <form action="" aria-labelledby="bookFormTitle">
+                <div class="inputBox">
+                    <label for="where-from">From:</label>
+                    <input type="text" id="where-from" placeholder="Place name" aria-required="true">
+                </div>
+                <div class="inputBox">
+                    <label for="where-to">To:</label>
+                    <input type="text" id="where-to" placeholder="Place name" aria-required="true">
+                </div>
+                <div class="inputBox">
+                    <label for="number">How many:</label>
+                    <input type="text" id="number" placeholder="Number of guests" aria-required="true">
+                </div>
+                <div class="inputBox">
+                    <label for="arrival">Arrival:</label>
+                    <input type="date" id="arrival" aria-required="true">
+                </div>
+                <div class="inputBox">
+                    <label for="leaving">Leaving:</label>
+                    <input type="date" id="leaving" aria-required="true">
+                </div>
+                <div class="inputBox">
+                    <button type="submit" class="btn" id="book-btn">Book</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer section with social links and copyright -->
+    <footer>
+        <h3 style="text-align: center;"><span>M</span>iddle <span>W</span>est <span>A</span>irlines</h3>
+        <div class="social-links">
+            <a href="https://www.facebook.com/rawad.tarhini.31/?locale=en_GB" target="_blank"><i class="fab fa-facebook-f"
+                    aria-label="Facebook"></i></a>
+            <a href="https://x.com/Rawadz5?t=UE5vZTSJ4hCRJu94bQeSXw&s=08" target="_blank"><i class="fab fa-twitter"
+                    aria-label="Twitter"></i></a>
+            <a href="https://www.instagram.com/rawadtarhinii?igsh=MWpoMTZ3YzNydWFqMQ==" target="_blank"><i class="fab fa-instagram"
+                    aria-label="Instagram"></i></a>
+            <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjp-MPBiMSEAxUc3QIHHVcHCKQQFnoECBYQAQ&url=https%3A%2F%2Flb.linkedin.com%2Fin%2Frawad-tarhini-b51652280&usg=AOvVaw3vwFA6HrnR8EHz0VDw9HE5&opi=89978449" target="_blank"><i
+                    class="fab fa-linkedin-in" aria-label="LinkedIn"></i></a>
+        </div>
+        <p class="Copyright" style="text-align: center;">&copy; Copyright 2024 <span>M</span>WA Company. All rights
+            reserved.</p>
+    </footer>
+
+    <!-- External JavaScript for book section -->
+    <script src="js/book.js"></script>
+</body>
+
+</html>

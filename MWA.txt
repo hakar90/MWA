@@ -1,0 +1,6 @@
+Middle Western Airline (I know there is no middle west)
+My website contains 4 pages:
+- home page
+- booking page where clients book their flights
+- packages where it there exists some cities with offers (less price)
+- review page where people give their feedbacks about the flights

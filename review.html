@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags for character set and viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Page title -->
+    <title>Review</title>
+    
+    <!-- External CSS, Font Awesome stylesheets, and Google Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header section with navigation, search bar, and logo -->
+    <header>
+        <a href="home.html" class="logo"><span>M</span>WA</a>
+        
+        <!-- Navigation links -->
+        <nav class="navbar">
+            <a href="index.html">home</a>
+            <a href="book.html">book</a>
+            <a href="packages.html">packages</a>
+            <a href="review.html">review</a>
+        </nav>
+        
+        <!-- Icons for search and user login -->
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn" aria-label="Search"></i>
+            <i class="fas fa-user" id="login-btn" aria-label="User Login"></i>
+        </div>
+        
+        <!-- Search bar -->
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search here..." aria-label="Search Input">
+            <label for="search-bar" class="fas fa-search" aria-label="Search Icon"></label>
+        </form>
+    </header>
+
+    <!-- Login form containers for login and signup functionalities -->
+    <div class="login-form-container" role="dialog">
+        <i class="fas fa-times" id="form-close"></i>
+        <form action="" aria-labelledby="login-form-title">
+            <h3 id="login-form-title">Login</h3>
+            <input type="email" class="box" placeholder="enter your email" aria-label="Email Input">
+            <input type="password" class="box" placeholder="enter your password" aria-label="Password Input">
+            <button type="submit" class="btn">Login Now</button>
+            <input type="checkbox" id="remember">
+            <label for="remember">Remember me</label>
+            <p>Forgot password? <a href="#">Click here</a></p>
+            <p>Don't have an account? <a href="#" id="SignUp">Register now</a></p>
+        </form>
+    </div>
+
+    <div class="login-form-container1" role="dialog">
+        <i class="fas fa-times" id="form-close" aria-label="Close"></i>
+        <form action="" aria-labelledby="signup-form-title">
+            <h3 id="signup-form-title">Signup</h3>
+            <input type="email" class="box" placeholder="enter your email" aria-label="Email Input">
+            <input type="password" class="box" placeholder="enter your password" aria-label="Password Input">
+            <input type="password" class="box" placeholder="enter your password again" aria-label="Confirm Password Input">
+            <button type="submit" class="btn">Sign Up</button>
+            <input type="checkbox" id="remember">
+            <label for="remember">Remember me</label>
+        </form>
+    </div>
+
+    <!-- Feedback section with a form for user reviews -->
+    <section id="feed">
+        <div class="wrapper">
+            <form action="">
+                <h1 id="feedback-title">Give Us Your Feedback</h1>
+                
+                <!-- Input box for user's name -->
+                <div class="input-box">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required aria-label="Name Input">
+                </div>
+                
+                <!-- Input box for user's email -->
+                <div class="input-box">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required aria-label="Email Input">
+                </div>
+                
+                <!-- Input box for user's feedback (textarea) -->
+                <div class="input-box1">
+                    <label for="feedback">Your Feedback:</label>
+                    <textarea id="feedback" name="feedback" rows="4" required aria-label="Feedback Input"></textarea>
+                </div>
+                
+                <!-- Button to submit feedback -->
+                <button type="submit" class="btn">Submit Feedback</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer section with social links and copyright -->
+    <footer>
+        <h3 style="text-align: center;"><span>M</span>iddle <span>W</span>est <span>A</span>irlines</h3>
+        <div class="social-links">
+            <a href="https://www.facebook.com/rawad.tarhini.31/?locale=en_GB" target="_blank"><i class="fab fa-facebook-f"
+                    aria-label="Facebook"></i></a>
+            <a href="https://x.com/Rawadz5?t=UE5vZTSJ4hCRJu94bQeSXw&s=08" target="_blank"><i class="fab fa-twitter"
+                    aria-label="Twitter"></i></a>
+            <a href="https://www.instagram.com/rawadtarhinii?igsh=MWpoMTZ3YzNydWFqMQ==" target="_blank"><i class="fab fa-instagram"
+                    aria-label="Instagram"></i></a>
+            <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjp-MPBiMSEAxUc3QIHHVcHCKQQFnoECBYQAQ&url=https%3A%2F%2Flb.linkedin.com%2Fin%2Frawad-tarhini-b51652280&usg=AOvVaw3vwFA6HrnR8EHz0VDw9HE5&opi=89978449" target="_blank"><i
+                    class="fab fa-linkedin-in" aria-label="LinkedIn"></i></a>
+        </div>
+        <p class="Copyright" style="text-align: center;">&copy; Copyright 2024 <span>M</span>WA Company. All rights
+            reserved.</p>
+    </footer>
+
+    <!-- External JavaScript for review section -->
+    <script src="js/review.js"></script>
+</body>
+
+</html>

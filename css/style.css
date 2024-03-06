@@ -1,0 +1,753 @@
+/* Define a custom CSS variable for orange color */
+:root{
+    --orange: #ffa500;
+}
+
+/* Global styling for all elements */
+*{
+    font-family: "Nunito", sans-serif;
+    /* Resetting margin, padding, and box-sizing */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Applying common styles to enhance user experience */
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+/* Body styles */
+body{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Selection styles */
+*::selection{
+    background: var(--orange);
+    color: #fff;
+}
+
+/* HTML styles */
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
+}
+
+/* Section styles */
+section{
+    padding: 2rem 9%;
+}
+
+/* Heading styles */
+.heading{
+    padding: 2.5rem 0;
+}
+
+.heading span{
+    /* Styling for a span within a heading */
+    font-size: 3.5rem;
+    background: rgba(255, 165, 0, .2);
+    color: var(--orange);
+    border-radius: .5rem;
+    padding: .2rem 1rem;
+}
+
+/* Button styles */
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    background: var(--orange);
+    color: #fff;
+    padding: .8rem 3rem;
+    border: .2rem solid var(--orange);
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+.btn:hover{
+    background: rgba(255, 165, 0, .2);
+    color: var(--orange);
+}
+
+/* Header styles */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #333;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+}
+
+/* Logo styles */
+header .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+header .logo span{
+    color: var(--orange);
+}
+
+/* Navbar styles */
+header .navbar a{
+    color: #fff;
+    font-size: 2rem;
+    margin: 0 .8rem;
+}
+
+header .navbar a:hover{
+    color: var(--orange);
+}
+
+/* Icon styles */
+header .icons i{
+    font-size: 2.5rem;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 2rem;
+}
+
+header .icons i:hover{
+    color: var(--orange);
+}
+
+/* Search bar container styles */
+header .search-bar-container{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: 1.5rem 2rem;
+    background: #333;
+    border-top: .1rem solid rgba(255, 255, 255, .2);
+    display: flex;
+    align-items: center;
+    z-index: 1001;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+
+header .search-bar-container.active{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+/* Search bar styles */
+header .search-bar-container #search-bar{
+    width: 100%;
+    padding: 1rem;
+    text-transform: none;
+    color: #333;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+}
+
+/* Search bar label styles */
+header .search-bar-container label{
+    color: #fff;
+    cursor: pointer;
+    font-size: 3rem;
+    margin-left: 1.5rem;
+}
+
+header .search-bar-container label:hover{
+    color: var(--orange);
+}
+
+/* Login form container styles */
+.login-form-container{
+    position: fixed;
+    top: 120%;
+    left: 0;
+    min-height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, .7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+}
+
+/* Login form styles */
+.login-form-container form{
+    margin: 2rem;
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+    background: #fff;
+    width: 50rem;
+}
+
+.login-form-container form h3{
+    font-size: 3rem;
+    color: #444;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Input box styles */
+.login-form-container form .box{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.7rem;
+    color: #333;
+    margin: .6rem 0;
+    border: .1rem solid rgba(0, 0, 0, .3);
+    text-transform: none;
+}
+
+.login-form-container form .box:focus{
+    border-color: var(--orange);
+}
+
+/* Remember me checkbox styles */
+.login-form-container form #remember{
+    margin: 2rem 0;
+}
+
+/* Form label styles */
+.login-form-container form label{
+    font-size: 1.5rem;
+}
+
+/* Submit button styles */
+.login-form-container form .btn{
+    display: block;
+    width: 100%;
+}
+
+/* Additional information paragraph styles */
+.login-form-container form p{
+    padding: .5rem 0;
+    font-size: 1.5rem;
+    color: #666;
+}
+
+/* Additional information link styles */
+.login-form-container form p a{
+    color: var(--orange);
+}
+
+.login-form-container form p a:hover{
+    color: #333;
+    text-decoration: underline;
+}
+
+/* Close button for login form */
+.login-form-container #form-close{
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
+    font-size: 5rem;
+    cursor: pointer;
+}
+
+/* Icon styles for login form */
+.login-form-container i{
+    font-size: 2.5rem;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 2rem;
+}
+
+.login-form-container i:hover{
+    color: var(--orange);
+}
+
+/* Login form container1 styles */
+.login-form-container1{
+    position: fixed;
+    top: 120%;
+    left: 0;
+    min-height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, .7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+}
+
+/* Login form1 styles */
+.login-form-container1 form{
+    margin: 2rem;
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+    background: #fff;
+    width: 50rem;
+}
+
+.login-form-container1 form h3{
+    font-size: 3rem;
+    color: #444;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Input box styles within login form1 */
+.login-form-container1 form .box{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.7rem;
+    color: #333;
+    margin: .6rem 0;
+    border: .1rem solid rgba(0, 0, 0, .3);
+    text-transform: none;
+}
+
+.login-form-container1 form .box:focus{
+    border-color: var(--orange);
+}
+
+/* Remember me checkbox styles within login form1 */
+.login-form-container1 form #remember{
+    margin: 2rem 0;
+}
+
+/* Form label styles within login form1 */
+.login-form-container1 form label{
+    font-size: 1.5rem;
+}
+
+/* Submit button styles within login form1 */
+.login-form-container1 form .btn{
+    display: block;
+    width: 100%;
+}
+
+/* Additional information paragraph styles within login form1 */
+.login-form-container1 form p{
+    padding: .5rem 0;
+    font-size: 1.5rem;
+    color: #666;
+}
+
+/* Additional information link styles within login form1 */
+.login-form-container1 form p a{
+    color: var(--orange);
+}
+
+.login-form-container1 form p a:hover{
+    color: #333;
+    text-decoration: underline;
+}
+
+/* Close button for login form1 */
+.login-form-container1 #form-close{
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
+    font-size: 5rem;
+    cursor: pointer;
+}
+
+/* Icon styles within login form1 */
+.login-form-container1 i{
+    font-size: 2.5rem;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 2rem;
+}
+
+.login-form-container1 i:hover{
+    color: var(--orange);
+}
+
+/* Home section styles */
+.home{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    background: url("../Images/Sl.jpg") no-repeat;
+    background-size: cover;
+}
+
+/* Content styles within the home section */
+.home .content{
+    text-align: center;
+}
+
+/* Heading styles within the home section */
+.home .content h3{
+    font-size: 4.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 0 .3rem .5rem rgba(0, 0, 0, 10);
+    font-weight: bolder;
+}
+
+/* Paragraph styles within the home section */
+.home .content p{
+    font-size: 2.5rem;
+    color: #fff;
+    padding: 5rem 0;
+    font-weight: bolder;
+}
+
+/* Controls styles within the home section */
+.home .controls{
+    padding: 1rem;
+    border-radius: 5rem;
+    background: rgba(0, 0, 0, .7);
+    position: relative;
+    top: 10rem;
+}
+
+/* Image button styles within the home section */
+.home .controls .img-btn{
+    height: 2rem;
+    width: 2rem;
+    display: inline-block;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+    margin: 0.5rem;
+}
+
+.home .controls .img-btn.active{
+    background: var(--orange);
+}
+
+/* Book section styles */
+.book{
+    position: relative;
+    top: -100px;
+    height: 90px;
+}
+
+/* Row styles within the book section */
+.book .row{
+    display: flex;
+    gap: 1.5rem;
+    text-align: left;
+}
+
+/* Image styles within the book section */
+.book .row .image{
+    flex: 1 1 40rem;
+}
+
+.book .row .image img {
+    width: 100%;
+}
+
+/* Form styles within the book section */
+.book .row form{
+    flex: 1 1 40rem;
+    padding: 2rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+    height: fit-content;
+    align-items: center;
+}
+
+/* Input box styles within the book section */
+.book .row form .inputBox{
+    padding: 1.5rem 0;
+}
+
+.book .row form .inputBox input{
+    width: 100%;
+    padding: 1rem;
+    border: .1rem solid rgba(0, 0, 0, .1);
+    font-size: 1.7rem;
+    color: #333;
+    text-transform: none;
+}
+
+.book .row form .inputBox h3{
+    font-size: 2rem;
+    padding: 1rem 0;
+    color: #666;
+}
+
+.book .row form .inputBox label {
+    font-size: 1.8rem; 
+}
+
+/* Slides styles */
+#slides{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Packages section styles */
+.packages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #f4f4f4;
+    position: relative;
+}
+
+/* Package styles */
+.packages .package {
+    width: 500px;
+    height: 750px;
+    margin: 10px;
+    padding: 10%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.packages .package:hover {
+    transform: scale(1.05);
+}
+
+.package{
+    cursor: pointer;
+    padding: 500%;
+}
+
+.packages div .name{
+    font-size: 4.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 0 .3rem .5rem rgba(0, 0, 0, 10);
+    font-weight: bolder;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+/* Slider styles */
+#slider{
+    position: relative;
+    width: 100%;
+    height: 1300px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#slider figure{
+    position: relative;
+    margin: 0;
+    left:0;
+    width: 500%;
+    animation: 20s slider infinite;
+}
+
+#slider figure img{
+    float:left;
+    width: 20%;
+    height: 1300px;
+}
+/* this will make the slides change 0%: The element starts with the left property set to 0.
+20%: No change, still at left: 0;.
+25%: starts moving to the left (left: -100%;).
+45%: continues moving to the left, still at left: -100%;.
+50%: reaches the next position (left: -200%;).
+70%: stays at left: -200%;.
+75%: starts moving again, this time to the right (left: -300%;).
+95%: continues moving to the right, still at left: -300%;.
+100%: completes the animation and returns to the original position (left: 0%;)*/
+
+@keyframes slider{
+    0% {
+        left: 0;
+    }
+    20% {
+        left: 0;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left:-100%;
+    }
+
+    50%{
+        left:-200%;
+    }
+    70% {
+        left: -200%;
+    }
+
+    75% {
+        left: -300%;
+    }
+
+    95% {
+        left: -300%;
+    }
+
+    100% {
+        left: 0%;
+    }
+}
+
+/* Container1 styles */
+#container1{
+    position: relative;
+    top: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items:center ;
+    font-size: 25px;
+}
+
+/* Footer styles */
+footer {
+    background-color:  #333;
+    padding: 10px 0;
+    text-align: center;
+    color: aliceblue;
+    display: block;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+footer h3 span{
+    color: var(--orange);
+}
+
+footer p span{
+    color: var(--orange);
+}
+
+/* Social links styles within footer */
+footer .social-links a{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background-color: #333;
+    margin:0 10px 10px 0;
+    text-align: center; 
+    line-height: 30px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+    align-items: center;
+}
+
+footer .social-links a:hover{
+    color: #333;
+    background-color: var(--orange);
+}
+
+/* Social media links styles */
+.SocialMedia a {
+    margin: 0 10px;
+    color: aliceblue;
+}
+
+/* Feed section styles */
+#feed{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('../Images/Wing1.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: left;
+}
+
+/* Wrapper styles */
+.wrapper{
+    width:420px;
+    background-color: transparent;
+    border: 2px solid rgba(255,255,255,.2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+    width: fit-content;
+    height: fit-content;
+}
+
+/* Heading styles within wrapper */
+.wrapper h1{
+    font-size: 36px;
+    text-align: center;
+}
+
+/* Input box styles within wrapper */
+.wrapper .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+    padding: 10px 0 70px 0;
+}
+
+.wrapper .input-box1 textarea{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+    padding: 10px 0 70px 0; 
+}
+
+/* Label styles within wrapper */
+.wrapper .input-box label{
+    font-size: 2.5rem;
+}
+
+.wrapper .input-box1 label{
+    font-size: 2.5rem;
+}
+
+/* Input styles within wrapper */
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255,255,255,.2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+    text-transform: none;
+}
+
+.input-box1 textarea{
+    text-transform: none;
+}
+
+/* Button styles within wrapper */
+.wrapper .btn{
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+
+.wrapper .btn:hover{
+    background-color: var(--orange);
+}
